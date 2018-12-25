@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>web2-13</title>
+
+    <script type="text/javascript" src="ncmb.min.js" charset="utf-8">
+    </script>
+    <script>
+      var ncmb=
+      new NCMB(
+        "6127257eb8fcc6192501397d862eda8770a8527367ff94325a5681e138a68267",
+        "dd2646284f8833d957d3e86b6c012092bfd261dbde60e982c856139772770c61"
+        )
+
+      var TestClass=ncmb.DataStore("TestClass");
+      var testClass=new TestClass();
+      testClass.set("message","Hello,ncmb!");
+      testClass.save().than(function(){
+        //sacces
+        
+      })
+      .catch(function(err){
+        //error
+      });
+    </script>
+  </head>
+  
+  <body>
+  </body>
+  
+</html>
